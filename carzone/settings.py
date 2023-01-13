@@ -25,7 +25,7 @@ SECRET_KEY = '5%!grn5y&xy6+_9gl^pk2%ti@4p+z234g^nfq919!idxajrbsq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 SOCIALACCOUNT_LOGIN_ON_GET=True
@@ -162,3 +162,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'test.dev.yyu@gmail.com'
 EMAIL_HOST_PASSWORD = 'hiusdiimdzoqljan'
 EMAIL_USE_TLS = True
+
+# Static work for Vercel
+
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
