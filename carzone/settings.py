@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'cars.apps.CarsConfig',
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -154,3 +155,10 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+# Email setting
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'test.dev.yyu@gmail.com'
+EMAIL_HOST_PASSWORD = 'hiusdiimdzoqljan'
+EMAIL_USE_TLS = True
