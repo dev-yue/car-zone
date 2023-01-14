@@ -9772,6 +9772,10 @@ a.nav-link.active{
     color: #fff !important;
 }
 
+.sticky-header{
+	z-index: 999 !important;
+}
+
 
 
 
