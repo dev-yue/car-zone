@@ -31,5 +31,5 @@ whitenoise = "==5.1.0"
 [dev-packages]
 
 [requires]
-python_version = "3.11"
-python_full_version = "3.11.1"
+python_version = "3.9.6"
+python_full_version = "3.9.6"
